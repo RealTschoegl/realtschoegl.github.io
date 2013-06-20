@@ -1,0 +1,185 @@
+/*Global properties */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Nova Square';
+}
+
+body {
+	top: 0;
+	background-image: url('background.png');
+}
+
+a:hover {
+	color: black;
+}
+a:visited {
+	text-decoration: none;
+	color: black !important;
+}
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+/* Navigation bar */
+
+.headerbar {
+	background-color: red;
+	width: 101%;
+	position: fixed;
+	height: 40px;
+	text-align: right;
+	padding-top: 10px;
+	top: 0;
+	z-index: 100000000000;
+	box-shadow: 0 4px 4px -2px black;
+}
+
+.headerbar p {
+	display: inline;
+	height: 30px;
+	position: relative;
+	padding: 15px 25px 12px 25px;
+	box-shadow: 0px 4px 4px -2px black;
+	color: black;
+}
+
+.headerbar p:hover {
+	display: inline;
+	height: 30px;
+	position: relative;
+	padding: 15px 25px 12px 25px;
+	font-family: 'Nova Square';
+	box-shadow: inset 0px 0px 10px black;
+}
+
+#myname {
+	font-size: 18px;
+	font-family: 'Nova Square';
+	font-weight: 700;
+	float: left;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#navone {background-color: #FF4040;}
+
+#navtwo {background-color: #FF7373;}
+
+#navthree {background-color: #A60000; margin-right: 9%;}
+
+
+/* 15 puzzle reference */
+
+#game {
+	margin-top: 120px;
+	padding-bottom: 40px;
+}
+
+/* Resume stuff */
+
+#uno {padding: 20px; position: relative;}
+
+a.anchor {display: block; position: relative; top: -70px; visibility: hidden;}
+
+#resume_container  {
+	padding: 20px;
+	display: inline;
+}
+
+#resume_container h3 {
+	text-indent: 30px;
+	margin-bottom: 20px;
+}
+
+#resume_container  p {
+	text-indent: 30px;
+	margin-bottom: 20px;
+}
+
+.resume {
+	margin: auto;
+	margin-bottom: 80px;
+	width: 710px;
+	height: 720px;
+	box-shadow: inset 0px 0px 10px #ccc;
+	background-color: white;
+	position: relative;
+}
+
+/* Portfolio Stuff */
+
+#dos {padding: 20px;}
+
+.portfolio {
+	margin: auto;
+	margin-bottom: 80px;
+	width: 710px;
+	height: 720px;
+	box-shadow: inset 0px 0px 10px #ccc;
+	background-color: white;
+}
+
+/* Flip card stuff */
+
+.portfolio img {
+	height: 600px; 
+	width: 600px; 
+	margin-left: 60px;
+}
+
+#versoman {
+	margin-left: 200px;
+	font-size: 40px;
+	color: black;
+}
+
+/* Contact Stuff */
+
+#pong1_ball {height: 20px !important; width: 20px !important;}
+
+#tres {padding: 20px;}
+
+.contact {
+	margin: auto;
+	margin-bottom: 80px;
+	width: 710px;
+	height: 720px;
+	box-shadow: inset 0px 0px 10px #ccc;
+	background-color: white;
+}
+
+#third{padding-bottom: 30px;}
+
+.pong_demo {
+    background-color:#000000;
+    color:#ffffff;
+    width:640px;
+    height:480px;
+    margin:auto auto;
+}
+
+/* Footer stuff */
+
+.gototop:hover {
+	margin-left: 45%;
+	padding: 2%;
+	border: 1px solid #008500;
+	background-color: #008500;
+	box-shadow: inset 3px 3px 10px black;
+}
+.footer {padding: 20px;} 
+
+.morefooter {background-color: #67E46F; padding: 30px 0px 30px 0px; width: 100%; box-shadow: -1px -5px 5px #888888}
+
+.gototop {
+	margin-left: 45%;
+	padding: 2%;
+	border: 2px solid #008500;
+	background-color: #008500;
+	border-radius: 15px;
+	box-shadow: 0px 10px 0px #005D00;
+}
+

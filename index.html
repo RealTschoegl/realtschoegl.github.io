@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matt Tschoegl's Portfolio Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="Puzzle/css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="Puzzle/js/main.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+	<script type="text/javascript" src="JavaScript/jquery.pong-0.4.1.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="JavaScript/jquery.rot13.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="JavaScript/jquery.flippy.js"></script>
+	<style>
+		<!-- The forced styling for the Pong ball -->
+		#pong1_ball {
+			position: absolute; 
+			width: 20px !important; 
+			height: 20px !important; 
+			/*background-color: rgb(255, 255, 255); */
+			background-image: url('glyphs/png/glyphicons_418_skype.png');
+			background-position: center center;
+			left: 20px; 
+			top: 56px;
+		}
+		<!-- Pong Glyphs -->
+		.email_ball {
+			background-image: url('http://realtschoegl.github.io/glyphs/png/glyphicons_419_email.png') !important;
+		}
+		.github_ball {
+			background-image: url('glyphs/png/glyphicons_401_github.png') !important;
+		}
+		.twitter_ball {
+			background-image: url('glyphs/png/glyphicons_411_twitter.png') !important;
+		}
+		.facebook_ball {
+			background-image: url('glyphs/png/glyphicons_410_facebook.png') !important;
+		}
+		.skype_ball {
+			background-image: url('glyphs/png/glyphicons_418_skype.png') !important;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$(".pong_demo").pong({
+       			"speed":1500,
+        		"pad_height":100
+    		});
+			var pongball = ["github_ball", "twitter_ball", "facebook_ball", "skype_ball", "email_ball"];
+			var pong_picker = Math.floor(Math.random()*5);
+			$('#pong1_ball').addClass(pongball[pong_picker]);
+			$(".flipbox").on("click",function(e){
+				$(".flipbox").flippy({
+					duration: "500",
+					verso: "<a style=\"position: absolute; margin-left: 230px; center; padding-top: 300px; color: black; font-size: 40px;\" href=\"http://github.com/RealTschoegl\" title=\"Matt's Github\" target=\"_blank\">Matt's Github</a>",
+				});
+			});
+			
+				
+		});
+		
+	</script>
+</head>
+<body>
+	<a class="anchor" id="gototop"></a>
+		<!-- The Navbar -->
+		<div class="headerbar">
+			<span id="myname">
+				<a href="index.html">Matthew S Tschoegl</a>
+			</span>
+			<a href="#resume">
+				<p id="navone">Resume</p>
+			</a>
+			<a href="#portfolio">
+				<p id="navtwo">Portfolio</p>
+			</a>
+			<a href="#contact">
+				<p id="navthree">Contact</p>
+			</a>
+		</div>
+		<!-- The call to the Puzzle -->
+		<div id="game">
+			<div id="game_object"></div>
+		</div>
+		<!-- Resume container -->
+		<div class="resume">
+		<a class="anchor" id="resume"></a>
+			<h2 id="uno">
+				<p style="box-shadow: 1px 1px 4px black; padding: 5px; color: black;">
+					<!-- This call it to rotate the content in resume_container 13 character when a click event happens -->
+						<a onclick='$("#resume_container h3").rot13(); $("#resume_container p").rot13();' style="cursor:pointer;">Click To Decrypt</a>
+				</p>
+			</h2>
+				<div id="resume_container">
+					<h3>Rqhpngvba</h3>
+					<p>ZnxreFdhner, EbE</P>
+					<p>Qhxr Havirefvgl, ZZF</p>
+					<p>Pbyhzovn Havirefvgl, Uvfgbel</p>
+					<h3>Rkcrevrapr</h3>
+					<p>jczh.bet, Oybttre</p>
+					<p>Rzvengrf AOQ, Znantrzrag Genvarr</p>
+					<p>VYV, RFY Vafgehpgbe</p>
+					<p>Nzvqrnfg, RFY Vafgehpgbe</p>
+					<h3>Fxvyyf</h3>				
+					<p>Ehol ba Envyf</p>
+					<p>UGZY | PFF</p>
+					<p>WninFpevcg | wDhrel</p>
+					<p>CUC</p>
+					<p>Nenovp</p>
+				</div>
+		</div>
+		<!-- Portfolio container -->
+		<a class="anchor" id="portfolio"></a>
+		<div id="portfolio" class="portfolio">
+			<h2 id="dos">
+				<p style="box-shadow: 1px 1px 4px black; padding: 5px;">Projects</p>
+			</h2> 
+			<div class="flipbox">
+				<!-- <a href="http://github.com/RealTschoegl" title="Matt's Github" target="_blank">Matt's Github</a> -->
+					<img src="http://octodex.github.com/images/plumber.jpg">
+			</div>
+		</div>
+		<!-- Contact Container -->
+		<a class="anchor" id="contact"></a>
+		<div class="contact">
+			<h2 id="tres">
+				<p style="box-shadow: 1px 1px 4px black; padding: 5px;">Contact</p>
+			</h2>
+			<!-- Contact links -->
+			<p id="third">
+				<a href="skype:matthew.tschoegl?call" title="Skype" target="_blank">
+					<i class="icon-skype icon-4x" style="margin: 30px 30px 30px 70px;"></i>
+				</a>
+				<a href="https://twitter.com/realtschoegl" title="Twitter" target="_blank">
+					<i class="icon-twitter-sign icon-4x" style="margin: 30px; color: black;"></i>
+				</a> 
+				<a href="https://www.facebook.com/matthew.tschoegl" title="Facebook" target="_blank">
+					<i class="icon-facebook-sign icon-4x" style="margin: 30px; color: black;"></i>
+				</a> 
+				<a href="https://github.com/realtschoegl" title="Github" target="_blank">
+					<i class="icon-github-sign icon-4x" style="margin: 30px; color: black;""></i>
+				</a>
+				<a href="mailto:Matt.Tschoegl@gmail.com?Subject=Hello%20Stranger" title="Email" target="_blank">
+					<i class="icon-envelope icon-4x" style="margin: 30px; color: black;""></i>
+				</a>
+			</p>
+			<!-- This is the pong game -->
+			<div id="pong1" class="pong_demo"></div>
+		</div>
+		<div class="morefooter">
+			<div class="footer">
+				<a class="gototop" href="#gototop">Go To Top</a>
+			</div>
+		</div>
+</body>
+</html>
