@@ -151,6 +151,15 @@ a.anchor {display: block; position: relative; top: -70px; visibility: hidden;}
 	background-color: white;
 }
 
+.attribution {
+	margin: auto;
+	margin-bottom: 80px;
+	width: 710px;
+	height: 240px;
+	box-shadow: inset 0px 0px 10px #ccc;
+	background-color: white;
+}
+
 #third{padding-bottom: 30px;}
 
 .pong_demo {
