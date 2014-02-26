@@ -12,15 +12,15 @@ body {
 }
 
 a:hover {
-	color: black;
+	color: #ccc;
 }
 a:visited {
 	text-decoration: none;
-	color: black !important;
+	color: white;
 }
 a:link {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 /* Navigation bar */
@@ -33,8 +33,7 @@ a:link {
 	text-align: right;
 	padding-top: 10px;
 	top: 0;
-	z-index: 100000000000;
-	box-shadow: 0 4px 4px -2px black;
+	z-index: 1;
 }
 
 .headerbar p {
@@ -64,11 +63,11 @@ a:link {
 	padding-top: 5px;
 }
 
-#navone {background-color: #FF4040;}
+#navone {}
 
-#navtwo {background-color: #FF7373;}
+#navtwo {}
 
-#navthree {background-color: #A60000; margin-right: 9%;}
+#navthree {margin-right: 9%;}
 
 
 /* 15 puzzle reference */
