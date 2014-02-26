@@ -63,22 +63,10 @@ a:link {
 	padding-top: 5px;
 }
 
-#navone {}
-
-#navtwo {}
-
 #navthree {margin-right: 9%;}
 
 .right_nav {
 	margin-right: -5%;
-}
-
-
-/* 15 puzzle reference */
-
-#game {
-	margin-top: 120px;
-	padding-bottom: 40px;
 }
 
 /* Resume stuff */
@@ -140,17 +128,16 @@ a.anchor {display: block; position: relative; top: -70px; visibility: hidden;}
 	margin-left: 60px;
 }
 
-#versoman {
-	margin-left: 200px;
-	font-size: 40px;
-	color: black;
-}
-
 /* Contact Stuff */
 
-#pong1_ball {height: 20px !important; width: 20px !important;}
+h2#tres { 
+	padding: 20px;
+}
 
-#tres {padding: 20px;}
+h2#tres p {
+	box-shadow: 1px 1px 4px black; 
+	padding: 5px;
+}
 
 .contact {
 	margin: auto;
@@ -174,15 +161,6 @@ a.anchor {display: block; position: relative; top: -70px; visibility: hidden;}
 	margin-top: 2%;
 	margin-left: 2%;
 }
-
-.pong_demo {
-    background-color:#000000;
-    color:#ffffff;
-    width:640px;
-    height:480px;
-    margin:auto auto;
-}
-
 /* Footer stuff */
 
 .gototop:hover {
