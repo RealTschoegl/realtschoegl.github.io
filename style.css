@@ -39,8 +39,10 @@ a:link {
 .headerbar p {
 	display: inline;
 	height: 30px;
+	line-height: 30px;
 	position: relative;
 	padding: 15px 25px 12px 25px;
+	font-size: 1.3em;
 	color: white;
 }
 
