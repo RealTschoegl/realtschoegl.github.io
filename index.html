@@ -14,55 +14,6 @@
     <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="JavaScript/jquery.flippy.js"></script>
     <script src="https://squaresend.com/squaresend.js"></script>
-    <style>
-	<!-- The forced styling for the Pong ball -->
-	#pong1_ball {
-		position: absolute; 
-		width: 20px !important; 
-		height: 20px !important; 
-		/*background-color: rgb(255, 255, 255); */
-		background-image: url('glyphs/png/glyphicons_418_skype.png');
-		background-position: center center;
-		left: 20px; 
-		top: 56px;
-	}
-	<!-- Pong Glyphs -->
-	.email_ball {
-		background-image: url('/glyphs/png/glyphicons_419_email.png') !important;
-	}
-	.github_ball {
-		background-image: url('glyphs/png/glyphicons_401_github.png') !important;
-	}
-	.twitter_ball {
-		background-image: url('glyphs/png/glyphicons_411_twitter.png') !important;
-	}
-	.facebook_ball {
-		background-image: url('glyphs/png/glyphicons_410_facebook.png') !important;
-	}
-	.skype_ball {
-		background-image: url('glyphs/png/glyphicons_418_skype.png') !important;
-	}
-    </style>
-    <script type="text/javascript">
-		$(document).ready(function(){
-    		$(".pong_demo").pong({
-       			"speed":1500,
-        		"pad_height":100
-    		});
-			var pongball = ["github_ball", "twitter_ball", "facebook_ball", "skype_ball", "email_ball"];
-			var pong_picker = Math.floor(Math.random()*5);
-			$('#pong1_ball').addClass(pongball[pong_picker]);
-			$(".flipbox").on("click",function(e){
-				$(".flipbox").flippy({
-					duration: "500",
-					verso: "<a style=\"position: absolute; margin-left: 230px; center; padding-top: 300px; color: black; font-size: 40px;\" href=\"http://github.com/RealTschoegl\" title=\"Matt's Github\" target=\"_blank\">Matt's Github</a>",
-				});
-			});
-			
-				
-		});
-		
-    </script>
   </head>
   <body>
 	<a class="anchor" id="gototop"></a>
@@ -80,10 +31,6 @@
 			<a href="#contact">
 				<p id="navthree">Contact</p>
 			</a>
-		</div>
-		<!-- The call to the Puzzle -->
-		<div id="game">
-			<div id="game_object"></div>
 		</div>
 		<!-- Resume container -->
 		<div class="resume">
